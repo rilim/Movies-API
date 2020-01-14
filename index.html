@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/04b00d367c.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+	<title>Front-end atsiskaitymas</title>
+</head>
+	<body>
+		<div class="container-fluid h-100">
+			<div class="container">
+				<header class="row">
+					<h1>Filmų paieška</h1>
+				</header>
+				<main class="row second-row">
+					<div class="input-group">
+                    <input id="filmoPaieska" type="text" class="form-control" placeholder="Įveskite filmo pavadinimą ir sužinokite kažką naujo">
+                    <div class="input-group-append">
+                        <button class="btn btn-primary" id="submit" type="button">Ieškoti</button>
+                    </div>
+                	</div>
+	                <section>
+	                	<h4 id="lenteles-pav">Filmo informacija:</h4>
+	                	<div class="table-responsive-md">
+		                	<table class="table">
+								 <thead class="thead-dark">
+								    <tr>
+								      <th scope="col">Metai</th>
+								      <th scope="col">Žanras</th>
+								      <th scope="col">Režisierius</th>
+								      <th scope="col">Trukmė</th>
+								      <th scope="col">IMDB reitingas</th>
+								      <th scope="col">Trumpas aprašymas</th>
+								    </tr>
+								 </thead>
+								 <tbody>
+								    <tr>
+								      <th id="metai"></th>
+								      <td id="zanras"></td>
+								      <td id="rez"></td>
+								      <td id="trukme"></td>
+								      <td id="reitingas"></td>
+								      <td id="aprasymas"></td>
+								    </tr>
+								</tbody>
+							</table>
+						</div>
+	                </section>
+				</main>
+				<footer>
+					<i class="far fa-copyright"></i>
+					<p>Made by Ričardas Limba</p>
+				</footer>
+
+
+
+				
+			</div>
+		</div>
+		<script src="js/app.js"></script>
+	</body>
+</html>
